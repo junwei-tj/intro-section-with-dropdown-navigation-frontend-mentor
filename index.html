@@ -14,16 +14,16 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="main">
     <div class="container header">
-      <div class="logo">
+      <div class="img">
         <img src="./images/logo.svg" />
       </div>
-      <div class="logo">
+      <div class="img" onclick="openMenu()">
         <img src="./images/icon-menu.svg" />
       </div>
     </div>
-    <img src="./images/image-hero-mobile.png" class="image" />
+    <img src="./images/image-hero-mobile.png" class="img-main" />
     <div class="container content">
       <h1 class="title">Make remote work</h1>
       <p class="paragraph">
@@ -33,19 +33,29 @@
       <button type="button" class="btn btn-learn-more">Learn more</button>
     </div>
     <div class="container footer">
-      <div class="logo logo-small">
+      <div class="img img-small">
         <img src="./images/client-databiz.svg" />
       </div>
-      <div class="logo logo-smaller">
+      <div class="img img-smaller">
         <img src="./images/client-audiophile.svg" />
       </div>
-      <div class="logo logo-small">
+      <div class="img img-small">
         <img src="./images/client-meet.svg" />
       </div>
-      <div class="logo logo-small">
+      <div class="img img-small">
         <img src="./images/client-maker.svg" />
       </div>
     </div>
   </div>
+  <div class="overlay" id="overlay"></div>
+  <div class="container side-nav" id="side-nav">
+    <div class="container header">
+      <div class="side-nav-img" id="close-button" onclick="closeMenu()">
+        <img src="./images/icon-close-menu.svg" />
+      </div>
+    </div>
+    <p>Something something something</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
