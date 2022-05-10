@@ -103,7 +103,7 @@ body{
   right: 0;
   background-color: var(--white);
   transition: transform 0.5s;
-  /* transform: translateX(100%); */
+  transform: translateX(100%);
   flex-direction: column;
   padding: 1.5em;
   box-sizing: border-box;
@@ -115,7 +115,7 @@ body{
 }
 
 .overlay {
-  /* display: none; */
+  display: none;
   background-color: var(--black);
   opacity: 75%;
   width: 100%;
@@ -130,15 +130,36 @@ body{
 .menu-item {
   color: var(--gray);
   margin-bottom: 1.5em;
+  font-size: .9em;
 }
 
 .menu-item:not(:nth-child(4)):hover {
   cursor: pointer;
 }
 
-.dropdown-menu {
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-title {
   display: flex;
   align-items: center;
+}
+
+.dropdown-options {
+  display: none;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-top: 1.5em;
+}
+
+.dropdown-option.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-option-icon {
+  margin-right: 1em;
 }
 
 .menu-arrow {
