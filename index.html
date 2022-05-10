@@ -49,12 +49,29 @@
   </div>
   <div class="overlay" id="overlay"></div>
   <div class="container side-nav" id="side-nav">
-    <div class="container header">
-      <div class="side-nav-img" id="close-button" onclick="closeMenu()">
-        <img src="./images/icon-close-menu.svg" />
+    <div class="side-nav-header" id="close-button" onclick="closeMenu()">
+      <img src="./images/icon-close-menu.svg" />
+    </div>
+    <div class="menu-item">
+      <div class="dropdown-menu">
+        <span>Features</span>
+        <img src="./images/icon-arrow-down.svg" class="menu-arrow" />
       </div>
     </div>
-    <p>Something something something</p>
+    <div class="menu-item">
+      <div class="dropdown-menu">
+        <span>Company</span>
+        <img src="./images/icon-arrow-down.svg" class="menu-arrow" />
+      </div>
+    </div>
+    <div class="menu-item">
+      <span>Careers</span>
+    </div>
+    <div class="menu-item">
+      <span>About</span>
+    </div>
+    <button class="btn btn-side-nav">Login</button>
+    <button class="btn btn-side-nav btn-register">Register</button>
   </div>
   <script src="script.js"></script>
 </body>
