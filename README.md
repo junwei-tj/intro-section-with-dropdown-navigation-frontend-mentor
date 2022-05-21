@@ -26,7 +26,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/desktop.png)
-![](./screenshots/mobile.png)
+
+<!-- ![](./screenshots/mobile.png) -->
+<img src="./screenshots/mobile.png" style="width: 50%; height: auto;" />
 
 ### Links
 
