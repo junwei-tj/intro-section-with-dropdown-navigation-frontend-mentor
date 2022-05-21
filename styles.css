@@ -8,9 +8,9 @@ html {
   height: 100%;
 }
 
-body{
+body {
   margin: 0;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-size: 18px;
   color: var(--black);
   background-color: var(--white);
@@ -31,49 +31,23 @@ body{
 .content {
   width: 100%;
   justify-content: center;
-  margin: 2.5em .5em 0 .5em;
+  margin: 2.5em 0.5em 0 0.5em;
 }
 
 .footer {
   margin: 3em 1em 0 1em;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
-  display: flex;
-  align-items: flex-start;
+  height: 1.75em;
+  width: auto;
 }
 
 .img-main {
   max-width: 100%;
-}
-
-.title {
-  font-weight: 700;
-  margin: 0;
-}
-
-.paragraph {
-  color: var(--gray);
-  text-align: center;
-  font-size: .9em;
-  line-height: 1.5em;
-}
-
-.btn {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 1em;
-  border-radius: 18px;
-  border: 0;
-}
-
-.btn-learn-more {
-  font-weight: 700;
-  background-color: var(--black);
-  color: var(--white);
-  padding: .9em 1.5em;
-  margin-top: .5em;
 }
 
 .img-small {
@@ -86,12 +60,61 @@ body{
 
 .img-smaller {
   width: 20%;
-  display:flex; 
-  justify-content: center
+  display: flex;
+  justify-content: center;
 }
 
 .img-smaller > img {
   width: 70%;
+}
+
+.title {
+  font-weight: 700;
+  margin: 0;
+}
+
+.paragraph {
+  color: var(--gray);
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+.btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1em;
+  border-radius: 18px;
+  border: 0;
+}
+
+.btn-learn-more {
+  font-weight: 700;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.9em 1.5em;
+  margin-top: 0.5em;
+}
+
+.btn-account {
+  background-color: var(--white);
+  color: var(--gray);
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  padding: 0.75em 1.5em;
+}
+
+.btn-account:hover {
+  cursor: pointer;
+  color: var(--black);
+}
+
+.btn-register {
+  border: 2px solid var(--gray);
+  border-radius: 16px;
+}
+
+.btn-register:hover {
+  border: 2px solid var(--black);
 }
 
 .side-nav {
@@ -130,11 +153,12 @@ body{
 .menu-item {
   color: var(--gray);
   margin-bottom: 1.5em;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
-.menu-item:not(:nth-child(4)):hover {
+.menu-item:not(:nth-child(3)):hover {
   cursor: pointer;
+  color: var(--black);
 }
 
 .menu-item:last-child {
@@ -166,15 +190,76 @@ body{
   margin-left: 1em;
 }
 
-.btn-side-nav {
-  background-color: var(--white);
-  color: var(--gray);
-  font-size: 0.9em;
-  margin-top: .5em;
-  padding: .75em;
+.top-nav {
+  display: none;
 }
 
-.btn-register {
-  border: 2px solid var(--gray);
-  border-radius: 16px;
+.btn-account-container {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .header {
+    margin: 1.5em 2em;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .top-nav {
+    margin-left: 3em;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item {
+    margin-bottom: 0;
+    margin-right: 3em;
+  }
+
+  .menu-arrow {
+    margin-left: 0.5em;
+  }
+
+  .btn-account {
+    margin: 0;
+  }
+
+  .btn-account-container {
+    display: initial;
+    margin-left: auto;
+  }
+
+  .dropdown-menu {
+    position: relative;
+  }
+
+  .dropdown-options {
+    position: absolute;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 32px 2px lightgray;
+    margin-left: 0;
+    padding: 1.5em;
+    white-space: nowrap;
+  }
+
+  .dropdown-options.shift-left {
+    right: 0;
+  }
+
+  .dropdown-option {
+    margin-bottom: 1em;
+  }
+
+  .dropdown-option.menu-item {
+    margin-right: 0;
+  }
 }
